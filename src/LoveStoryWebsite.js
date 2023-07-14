@@ -53,8 +53,24 @@ const LoveStoryWebsite = () => {
           description: 'Pick a recipe and cook a romantic dinner together. Share the experience and enjoy the delicious meal you create.',
         },
         {
-          title: 'Adventure Day',
-          description: 'Plan an adventurous day outdoors. Go hiking, biking, or try a new water sport. Embrace the thrill and make lasting memories.',
+          title: 'Go explore a new Cafe',
+          description: 'Randomly select a cafe and drive away.',
+        },
+        {
+          title: 'Go Kayaking',
+          description: 'Go row away those kayaks',
+        },
+        {
+          title: 'Visit the Zoo',
+          description: 'Go have some fun with the animals',
+        },
+        {
+          title: 'Get High',
+          description: 'Roll that thing up and dive into another dimension',
+        },
+        {
+          title: 'Get Drunk',
+          description: 'Open that home bar and create some nice cocktails',
         },
         {
           title: 'Movie Marathon',
