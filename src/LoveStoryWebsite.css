@@ -1,0 +1,342 @@
+/* Add custom styles here */
+
+/* Soft romantic colors */
+:root {
+  --primary-color:  #d9536b; /* Light pink */
+  --secondary-color: #e9ecef; /* Light gray */
+  --acsent-color: #e89993;
+}
+
+/* Header */
+header {
+  
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: white; /* Add font color for header text */
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--acsent-color);
+  padding: 10px 0;
+  z-index: 1;
+}
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+nav ul li.active a {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+/* Sections */
+section {
+  padding: 50px 0;
+  background-color: var(--secondary-color);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.timeline-event {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif; /* Add font family for timeline event text */
+  color: #333; /* Add text color for timeline event text */
+}
+
+.timeline-event .date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-event .description {
+  font-style: italic;
+}
+
+/* Love Letters */
+.love-letter {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.love-letter .sender {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.love-letter .message {
+  font-style: italic;
+}
+/* Love Letters */
+.love-letters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.love-letter-tile {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.love-letter-tile .love-letter-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.love-letter-tile .love-letter-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Popup */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  opacity: 1;
+  /* pointer-events: none; */
+  transition: opacity 0.3s ease;
+}
+
+.popup-content {
+  max-width: 90%;
+  max-height: 90%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.popup-content .popup-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+
+/* Challenges */
+.challenge-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.challenge-tile {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.challenge-tile .challenge-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.challenge-tile .challenge-description {
+  font-size: 14px;
+}
+.random-challenge-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.random-challenge-button:hover {
+  background-color: #d9c1c6; /* Lighter shade of the primary color */
+}
+
+.random-challenge-button:focus {
+  outline: none;
+}
+/* Playlist */
+.playlist-song {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.playlist-song .title {
+  font-weight: bold;
+}
+
+.playlist-song .artist {
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+/* Center align text in footer */
+footer p {
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  .timeline-event .date {
+    font-size: 16px;
+  }
+
+  .timeline-event .description {
+    font-size: 14px;
+  }
+
+  .love-letter .sender {
+    font-size: 16px;
+  }
+
+  .love-letter .message {
+    font-size: 14px;
+  }
+
+  .challenge .title {
+    font-size: 16px;
+  }
+
+  .challenge .description {
+    font-size: 14px;
+  }
+  .playlist-section {
+    display: flex;
+    padding: 50px 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .playlist-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .playlist-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+  
+  .playlist-section .playlist-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .playlist-section .playlist-container iframe {
+    width: 300px;
+    height: 380px;
+  }
+  
+  .playlist-song .title {
+    font-size: 16px;
+  }
+
+  .playlist-song .artist {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+}
+body{
+  overflow-y: auto;
+}
+
+}
